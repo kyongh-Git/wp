@@ -61,8 +61,22 @@ var li12= $("#element_12").val();
 var li13= $("#element_13").val();
 	
 var li35= $("#element_20").val();
+
+var offer=$("input[name='element_52']:checked").val();
+var li51;
+if(offer=="1")
+{
+	var mm51=$("#element_51_1").val();
+	var dd51=$("#element_51_2").val();
+	var yy51=$("#element_51_3").val();
+	li51=mm51+"/"+dd51+"/"+yy51;
+}
+ else
+{
+	li51="No Offer";
+}
  
-var querystring ="&element_1_1="+li1a+"&element_1_2="+li1b+"&element_2="+li2+"&element_3_1="+li3a+"&element_3_3="+li3c+"&element_3_4="+li3d+"&element_3_5="+li3e+"&element_3_6="+li3f+"&element_20="+li4+"&element_21="+li5+"&element_6="+li6+"&element_7="+li7+"&element_8="+li8+"&element_22="+li9+"&element_10="+li10+"&element_11="+li11+"&element_12="+li12+"&element_13="+li13+"&element_35="+li35+"&element_38="+li21;
+var querystring ="&element_1_1="+li1a+"&element_1_2="+li1b+"&element_2="+li2+"&element_3_1="+li3a+"&element_3_3="+li3c+"&element_3_4="+li3d+"&element_3_5="+li3e+"&element_3_6="+li3f+"&element_20="+li4+"&element_21="+li5+"&element_6="+li6+"&element_7="+li7+"&element_8="+li8+"&element_22="+li9+"&element_10="+li10+"&element_11="+li11+"&element_12="+li12+"&element_13="+li13+"&element_35="+li35+"&element_38="+li21+"&element_40="+li51;
 querystring = querystring.replace(/\s/g,'%20');
 var url = "https://okstate.forms-db.com/view.php?id=587125"+querystring;
 $("#element_19").val(url);
