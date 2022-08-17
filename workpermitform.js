@@ -29,7 +29,8 @@ var li8= $("#element_8").val();
 	
 var li21= $("#element_21").val();
 
-var stat=$("input[name='element_9']:checked").val();
+var stat = $("input[name='element_9']:checked").val();
+
 var li9;
 if(stat=="1")
 {
@@ -47,12 +48,26 @@ else if(stat=="4")
 {
 	li9="PR Applicant";
 }
- else
+else
 {
-	li9=$("#element_9_other").val();;
+	li9 = $("#element_9_other").val();
 }
- 
-var li10= $("#element_10").val();
+
+var stat10 = $("input[name='element_55']:checked").val();
+var li10;
+
+if (stat10 == "1") {
+	li10 = "Undergraduate";
+}
+else if (stat10 == "2") {
+	li10 = "Master";
+}
+else if (stat10 == "3") {
+	li10 = "PhD";
+}
+else {
+	li10 = $("#element_55_other").val();
+}
 
 var li11= $("#element_11").val();
 
