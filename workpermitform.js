@@ -1,7 +1,7 @@
 $(function() {
 $("#submit_form").click(function(e){
-var li1a= $("#element_1_1").val();
-var li1b= $("#element_1_2").val();
+var li1a = $("#element_1_1").val();
+var li1b = $("#element_1_2").val();
 
 var li2= $("#element_2").val();
 
@@ -94,7 +94,7 @@ if(offer=="1")
 
 var li54= $("#element_54").val();
  
-var querystring ="&element_1_1="+li1a+"&element_1_2="+li1b+"&element_2="+li2
+var querystring ="&element_44="+li1a+"&element_43="+li1b+"&element_2="+li2
 +"&element_3_1="+li3a+"&element_3_2="+li3b+"&element_3_3="+li3c+"&element_3_4="+li3d+"&element_3_5="+li3e+"&element_3_6="+li3f
 +"&element_20="+li4+"&element_21="+li5+"&element_6="+li6+"&element_7="+li7+"&element_8="+li8+"&element_22="+li9
 +"&element_42="+li10+"&element_11="+li11+"&element_12="+li12+"&element_13="+li13+"&element_35="+li35+"&element_38="+li21+"&element_40="+li51+"&element_41="+li54;
